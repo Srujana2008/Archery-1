@@ -5,7 +5,7 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 var canvas;
-
+var base1;
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
@@ -16,7 +16,7 @@ function setup() {
 	
    //Create Player Base and Computer Base Object
   base1 = new ComputerBase(200, 200, 50, 50);
-  base2 = new PlayerBase(300, 300, 50, 50);
+  //base2 = new PlayerBase(300, 300, 50, 50);
 
  }
 
@@ -34,7 +34,7 @@ function draw() {
 
    //Display Playerbase and computer base 
   base1.display();
-  base2.display();
+  //base2.display();
 
    //display Player and computerplayer
 
