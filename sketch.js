@@ -15,8 +15,10 @@ function setup() {
   world = engine.world;
 	
    //Create Player Base and Computer Base Object
-  base1 = new ComputerBase(200, 200, 50, 50);
-  //base2 = new PlayerBase(300, 300, 50, 50);
+  base1 = new ComputerBase(20, 250, 200, 150);
+  base2 = new PlayerBase(900, 250, 200, 150);
+  player = new Player(20, 100, 80, 200);
+  comPlayer = new Player(900, 100, 80, 200);
 
  }
 
@@ -34,9 +36,11 @@ function draw() {
 
    //Display Playerbase and computer base 
   base1.display();
-  //base2.display();
+  base2.display();
+  //display Player and computerplayer
+  player.display();
+  comPlayer.display();
 
-   //display Player and computerplayer
-
+   
 
 }
